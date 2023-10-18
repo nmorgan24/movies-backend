@@ -114,7 +114,7 @@ app.put("/movie/:id", async (req, res) => {
   });
 
   // DESTROY - DELETE - /movie/:id - delete a single movie
-app.delete("/movie/:id", async (req, res) => {
+app.delete("/movies/:id", async (req, res) => {
     try {
         // delete the movie
         const movie = await Movie.findByIdAndDelete(req.params.id)
