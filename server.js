@@ -77,9 +77,9 @@ app.get("/movie", async (req, res) => {
 app.post("/movie", async (req, res) => {
     try {
         // create the new movie
-        const Movie = await Movie.create(req.body)
+        const movie = await Movie.create(req.body)
         // send newly created movies as JSON
-        res.json(Movie)
+     res.json(movie)
     }
     catch(error){
         res.status(400).json({ error })
@@ -88,11 +88,11 @@ app.post("/movie", async (req, res) => {
 
 // SHOW - GET - /movie/:id - get a single movie
 app.get("/movie/:id", async (req, res) => {
+    console.log(req)
     try {
       // get a movie from the database
-      const Movie = await Movie.findById(req.params.id);
+       await Movie.findById(req.params.id);
       // return the movie as json
-      res.json(Movie);
     } catch (error) {
       res.status(400).json({ error });
     }
