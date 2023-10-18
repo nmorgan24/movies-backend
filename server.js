@@ -39,13 +39,11 @@ mongoose.connection
 // collections, tables =snake_case, plural "movies"
 
 const movieSchema = new mongoose.Schema({
-    image: String,
     name: String,
-    author: String,
-    released: String
+    image: String,
+    title: String
 })
-
-const Movie = mongoose.model("People", movieSchema)
+const Movie = mongoose.model("Movie", movieSchema)
 
 
 //////////////////////////////
