@@ -91,7 +91,8 @@ app.get("/movie/:id", async (req, res) => {
     console.log(req)
     try {
       // get a movie from the database
-       await Movie.findById(req.params.id);
+       const movie = await Movie.findById(req.params.id);
+       res.json(movie)
       // return the movie as json
     } catch (error) {
       res.status(400).json({ error });
