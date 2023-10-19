@@ -1,0 +1,24 @@
+# Capstone project
+
+- **Project Name:** Movie List
+- **Project By:**   Nyijia Morgan
+- [**LINK TO GITHUB Frontend**](https://github.com/nmorgan24/movie-apppp)
+- [**LINK TO DEPLOYED WEBSITE**](https://moviebackend-2kfn.onrender.com)
+- **List of Technologies used:** Express, React, Foundation 
+
+
+## Description
+an app that lets you add their Movies you watched to your collection.
+
+
+| ENDPOINT | METHOD | PURPOSE |
+|----------|--------|---------|
+|/movies | Get | Return list of movies |
+|/movies/:id | Get | Render page with the movies|
+|/movies/ | Post | Create new Movies |
+|/movies/:id | Put | Update movies |
+|/movies/:id/ | Delete | Delete Movies |
+
+## ERD (ENTITY RELATIONSHIP DIAGRAM)
+
+- ![ERD](./Screenshot%202023-10-18%20190222.png)
